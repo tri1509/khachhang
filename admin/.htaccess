@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule "index.html" "index.php"
+RewriteRule "dang-nhap" "login.php"
+RewriteRule "dang-ky" "register.php"
+
+
