@@ -138,10 +138,8 @@ include '../lib/validation.php';
 $("#password, #password_2").on("keyup", function() {
   if ($("#password").val() == $("#password_2").val()) {
     $("#register").removeAttr("disabled");
-    $("#restorepass").removeAttr("disabled");
   } else {
     $("#register").attr("disabled", "disabled");
-    $("#restorepass").attr("disabled", "disabled");
   }
 });
 </script>

@@ -84,5 +84,30 @@
                 return $alert;
             }
         }
+        public function add_user($data){
+            $code = mysqli_real_escape_string($this->db->link, $data['code']);
+            $name = mysqli_real_escape_string($this->db->link, $data['name']);
+            $room = mysqli_real_escape_string($this->db->link, $data['room']);
+            $pass = mysqli_real_escape_string($this->db->link, $data['pass']);
+            $check_code = "SELECT * FROM admin WHERE code='$code' LIMIT 1";
+            $result_check = $this->db->select($check_code);
+            if($result_check){
+                $get_resule = $result_check -> fetch_assoc();
+                $alert = "<div class='alert alert-info' role='alert'>Mã số này đã được ";
+                $alert .= $get_resule['name'];
+                $alert .= " đăng ký rồi, mời bạn dùng mã số khác !</div>";
+                return $alert;
+            }else{
+                $query = "INSERT INTO admin(pass,code,name,room) VALUE('$pass','$code','$name','$room')";
+                $result = $this->db->insert($query);
+                if($result) {
+                    $alert = "<div class='alert alert-success' role='alert'>Thêm tài khoản thành công !</div>";
+                }else {
+                    $alert = "<div class='alert alert-danger' role='alert'>Đăng ký không thành công, vui lòng thử lại !</div>";
+                }
+                return $alert;
+            }
+
+        }
     }
 ?>

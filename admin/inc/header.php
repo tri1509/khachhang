@@ -62,7 +62,19 @@
             <ul class="sub-menu">
               <li><a href="add-contact.php">Thêm mới</a></li>
               <li><a href="list-contact.php">Danh sách</a></li>
-              <!-- <li><a href="cat-post.php">Danh mục</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-link">
+            <a href="" class="link">
+              <div class="nav-link-icon d-inline-flex">
+                <i class="far fa-folder"></i>
+              </div>
+              Users
+            </a>
+            <i class="arrow fas fa-angle-right"></i>
+            <ul class="sub-menu">
+              <li><a href="add-user.php">Thêm mới</a></li>
+              <li><a href="list-user.php">Danh sách</a></li>
             </ul>
           </li>
         </ul>

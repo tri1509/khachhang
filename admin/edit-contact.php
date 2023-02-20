@@ -75,7 +75,7 @@
               </div>
             </div>
           </div>
-          <input type="submit" class="btn btn-primary" value="Cậpp nhật" name="edit">
+          <input type="submit" class="btn btn-primary" value="Cập nhật" name="edit">
         </form>
       </div>
     </div>

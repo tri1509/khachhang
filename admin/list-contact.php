@@ -17,7 +17,7 @@
         <h5 class="m-0">Danh sách</h5>
       </div>
       <div class="card-body">
-        <table class="table table-striped table-checkall" id=".table-admin">
+        <table class="table table-striped table-checkall" id="table-admin">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -29,7 +29,7 @@
               <th scope="col">Thông qua</th>
               <th scope="col">Giờ gọi</th>
               <th scope="col">Ghi chú</th>
-              <th scope="col">Action</th>
+              <th scope="col">Tác vụ</th>
             </tr>
           </thead>
           <tbody>

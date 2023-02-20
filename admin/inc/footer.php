@@ -33,26 +33,15 @@ function ChangeToSlug() {
 </script>
 <script>
 $(function() {
-  $(".order_position").sortable({
-    update: function(event, ui) {
-      var array_id = [];
-      $(".order_position tr").each(function() {
-        array_id.push($(this).attr('id'))
-      })
-      $.ajax({
-        url: "ajax/order_position.php",
-        method: "POST",
-        data: {
-          array_id: array_id
-        },
-        success: function(data) {
-          // alert('sắp xếp thành công !');
-          // alert(array_id);
-        }
-      })
+  $('#table-admin').DataTable();
+
+  $("#password, #password_2").on("keyup", function() {
+    if ($("#password").val() == $("#password_2").val()) {
+      $("#add-user").removeAttr("disabled");
+    } else {
+      $("#add-user").attr("disabled", "disabled");
     }
   });
-  $('#table-admin').DataTable();
 })
 </script>
 </body>

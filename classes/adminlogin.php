@@ -7,7 +7,6 @@
 ?>
 <?php
     class adminlogin {
-
         private $db;
         private $fm;
         public function __construct() {
@@ -19,7 +18,6 @@
             $pass = $this->fm->validation($pass);
             $code = mysqli_real_escape_string($this->db->link,$code);
             $pass = mysqli_real_escape_string($this->db->link,$pass);
-
             if(empty($code) || empty($pass)) {
                 $alert = "<p class='text-danger'>Không được để trống !</p>";
                 return $alert;
@@ -45,7 +43,6 @@
             $name = mysqli_real_escape_string($this->db->link, $data['name']);
             $room = mysqli_real_escape_string($this->db->link, $data['room']);
             $pass = mysqli_real_escape_string($this->db->link, $data['pass']);
-
             $check_code = "SELECT * FROM admin WHERE code='$code' LIMIT 1";
             $result_check = $this->db->select($check_code);
             if($result_check){
