@@ -42,7 +42,7 @@
             <?php echo $name." - ".$code ; ?>
           </button>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Tài khoản</a>
+            <a class="dropdown-item" href="add-user.php?edit=<?php echo md5($code) ; ?>">Tài khoản</a>
             <a class="dropdown-item" href="?action=logout">Thoát</a>
           </div>
         </div>
