@@ -130,7 +130,7 @@
             $query = "INSERT INTO nguon(name,code,job,phone,area,search,question,note) VALUES('$name','$code','$job','$phone','$area','$search','$question','$note')";
             $result = $this->db->insert($query);
             if($result){
-                $alert= "<div class='alert alert-success' role='alert'>Thêm thành công !</div></span>" ;
+                $alert= "<div class='alert alert-success' role='alert'>Thêm thành công !</div>" ;
                 return $alert;
             }else{
                 $alert= "<span class='text-danger text-center'>Thất bại</span>" ;

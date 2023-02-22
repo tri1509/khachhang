@@ -14,16 +14,18 @@
       elToggle.classList.add("active");
     }
   });
-  elToggle_2.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (elToggle_2.classList.contains("active")) {
-      passwordInput_2.setAttribute("type", "password");
-      elToggle_2.classList.remove("active");
-    } else {
-      passwordInput_2.setAttribute("type", "text");
-      elToggle_2.classList.add("active");
-    }
-  });
+  if (elToggle_2 && passwordInput_2) {
+    elToggle_2.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (elToggle_2.classList.contains("active")) {
+        passwordInput_2.setAttribute("type", "password");
+        elToggle_2.classList.remove("active");
+      } else {
+        passwordInput_2.setAttribute("type", "text");
+        elToggle_2.classList.add("active");
+      }
+    });
+  }
 })();
 window.requestAnimFrame = (function () {
   return (

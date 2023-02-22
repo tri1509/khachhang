@@ -146,3 +146,10 @@ ul#sidebar-menu * {
   right: -5px;
   color: #8c8c8c;
 }
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
