@@ -6,7 +6,6 @@ body {
   font-size: 15px;
   background-color: #ffffff;
 }
-
 a {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -28,7 +27,31 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25% 75% 25% 75% / 75% 25% 75% 25%;
-  background: linear-gradient(0deg, #474bff33 0%, #bc48ff33 100%);
+  background: linear-gradient(
+    -45deg,
+    #474bff33,
+    #da7cff33,
+    #84abff33,
+    #ddff8e33
+  );
+  /* background: linear-gradient(0deg, #474bff33 0%, #bc48ff33 100%); */
+  background-size: 400% 400%;
+  animation: gradient 2s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    border-radius: 25% 75% 25% 75% / 75% 25% 75% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+    border-radius: 75% 25% 75% 25% / 25% 75% 25% 75%;
+  }
+  100% {
+    border-radius: 25% 75% 25% 75% / 75% 25% 75% 25%;
+    background-position: 0% 50%;
+  }
 }
 
 .form-wrap .title {

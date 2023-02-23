@@ -16,6 +16,7 @@ include '../lib/validation.php';
 <head>
   <base href="http://localhost/khachhang/admin/">
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="https://nina.vn/images/logo-2789.png" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -49,17 +50,14 @@ include '../lib/validation.php';
               <input type="checkbox" class="form-check-input" id="remember" name="remember_me" />
               <label for="remember" class="form-check-label">Ghi nhớ mập khẩu</label>
             </div>
-            <!-- <div><a href="">Quên mật khẩu ?</a></div> -->
+            <div><a href="">Quên mật khẩu ?</a></div>
           </div>
-
           <div class="d-grid mb-4">
             <input type="submit" class="btn btn-primary" value="Đăng nhập" name="btn_login" id="btn_login">
           </div>
-
-          <div class="mb-2">
+          <div class="mb-2 text-center">
             Bạn chưa có tài khoản? <a href="dang-ky">Đăng ký ngay</a>
           </div>
-
         </form>
       </div>
     </div>
@@ -68,8 +66,7 @@ include '../lib/validation.php';
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/login.js" type="text/javascript"></script>

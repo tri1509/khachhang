@@ -1,5 +1,5 @@
 <?php include 'inc/header.php';?>
-<?php include '../classes/contact.php';?>
+<?php include '../classes/controller.php';?>
 <?php
 	$ct = new contact();		
 	if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add'])) {

@@ -12,6 +12,42 @@
             $this->db = new Database();
             $this->fm = new Format();
         }
+        public function edit_pass($data,$code_md5) {
+            $pass = mysqli_real_escape_string($this->db->link, $data['pass']);
+            $new_pass = mysqli_real_escape_string($this->db->link, $data['new_pass']);
+            $code_md5 = mysqli_real_escape_string($this->db->link,$code_md5);
+            $check_pass = "SELECT * FROM admin WHERE md5(code) = '$code_md5' LIMIT 1";
+            $result_check_pass = $this->db->select($check_pass);
+            $result = $result_check_pass -> fetch_assoc();
+            $get_pass = $result['pass'];
+            if($pass == $get_pass){
+                if(empty($new_pass)) {
+                    $alert = "<div class='alert alert-danger' role='alert'>Không được để trống mật khẩu mới !</div>";
+                    return $alert;
+                }else{
+                    $pattern = '/^[A-Za-z0-9_\.!@#$%^&*()]{6,32}$/';
+                    if(!preg_match($pattern,$new_pass)){
+                        $alert = "<div class='alert alert-danger' role='alert'>Đặt mật khẩu phức tạp hơn !!!</div>";
+                        return $alert;
+                    }else{
+                        $query = "UPDATE admin SET 
+                        pass = '$new_pass'
+                        WHERE md5(code) = '$code_md5'";
+                        $result = $this->db->update($query);
+                        if($result){
+                            $alert= "<div class='alert alert-success' role='alert'>Đổi mật khẩu thành công !</div>" ;
+                            return $alert;
+                        }else{
+                            $alert= "<span class='text-danger text-center'>Thất bại</span>" ;
+                            return $alert;
+                        }
+                    }
+                }
+            }else{
+                $alert = "<div class='alert alert-danger' role='alert'>Mật khẩu cũ chưa đúng !!!</div>";
+                return $alert;
+            }
+        }
         public function edit_user($data,$code_md5) {
             $code = mysqli_real_escape_string($this->db->link, $data['code']);
             $name = mysqli_real_escape_string($this->db->link, $data['name']);

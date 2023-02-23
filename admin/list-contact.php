@@ -1,5 +1,5 @@
 <?php include 'inc/header.php';?>
-<?php include '../classes/contact.php';?>
+<?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
 <?php
   $fm = new Format();

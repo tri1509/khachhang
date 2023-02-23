@@ -6,6 +6,9 @@
   }            
   $name = Session::get('adminName');
   $code = Session::get('adminCode');
+  if (empty($title)){
+    $title = "Trang chủ";
+  }
   ob_start();
 ?>
 <!DOCTYPE html>
@@ -14,13 +17,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="shortcut icon" href="https://nina.vn/images/logo-2789.png" type="image/x-icon">
   <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Admintrator</title>
+  <title><?php echo $title ?></title>
 </head>
 
 <body>
@@ -29,7 +31,9 @@
       <div class="logo">
         <img src="https://nina.vn/upload/hinhanh/logothietkewebnina-3831.webp" alt="" srcset="" width="120">
       </div>
-      <div class="navbar-brand"><a href="./">DESIGN BY M.TRÍ</a></div>
+      <div class="navbar-brand">
+        <a href="./">DESIGN BY M.TRÍ</a>
+      </div>
       <div class="nav-right ">
         <div class="btn-group mr-auto">
           <button type="button" class="btn dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
