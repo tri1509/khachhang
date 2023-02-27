@@ -1,4 +1,6 @@
-<?php include 'inc/header.php';?>
+<?php
+$title = "Thêm khách hàng";
+include 'inc/header.php';?>
 <?php include '../classes/controller.php';?>
 <?php
 	$ct = new contact();		
@@ -12,7 +14,6 @@
       <div class="card-header font-weight-bold">
         Thêm nguồn
       </div>
-      <?php if(isset($insert)){echo $insert ; } ?>
       <div class="card-body">
         <form method="post" action="">
           <div class="row">
@@ -64,6 +65,7 @@
           <input type="submit" class="btn btn-primary" value="Thêm mới" name="add">
         </form>
       </div>
+      <?php if(isset($insert)){echo $insert ; } ?>
     </div>
   </div>
 </div>

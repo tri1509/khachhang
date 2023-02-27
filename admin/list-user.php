@@ -1,11 +1,14 @@
-<?php include 'inc/header.php';?>
+<?php
+$title = "Danh sách thành viên";
+include 'inc/header.php';
+?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
 <div id="wp-content">
   <div id="content" class="container-fluid">
     <div class="card">
       <div class="card-header font-weight-bold d-flex justify-content-between align-items-center">
-        <h5 class="m-0 ">Danh sách thành viên</h5>
+        <h5 class="m-0">Danh sách thành viên</h5>
       </div>
       <div class="card-body">
         <table class="table table-striped table-checkall">
@@ -20,8 +23,12 @@
             </tr>
           </thead>
           <tbody>
-            <?php 
-            $ct = new contact();		
+            <?php
+            $ct = new contact();	
+            if(isset($_GET['del'])){
+              $id = $_GET['del'];
+              $del = $ct ->del_user($id);
+            }	
             $show_user = $ct -> show_user();
             if($show_user) {
               $i=0;
@@ -35,6 +42,14 @@
               <td><?php echo $resule['room'] ?></td>
               <td><?php echo $resule['time'] ?></td>
               <td>
+                <?php 
+                  if ($code == "28838"){
+                ?>
+                <a href="?del=<?php echo $resule['id'] ?>"
+                  onclick="return confirm('Bạn có muốn xoá thành viên này không?')"
+                  class="btn btn-danger btn-sm rounded-0 text-white" type="button" data-toggle="tooltip"
+                  data-placement="top" title="Xoá"><i class="fa fa-trash"></i></a>
+                <?php } ?>
                 <?php 
                 if ($code == $resule['code']){
                 ?>

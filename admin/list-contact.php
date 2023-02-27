@@ -1,4 +1,6 @@
-<?php include 'inc/header.php';?>
+<?php
+$title = "Danh sách khách hàng";
+include 'inc/header.php';?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
 <?php

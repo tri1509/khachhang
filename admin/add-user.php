@@ -1,4 +1,10 @@
-<?php include 'inc/header.php';?>
+<?php
+if(!isset($_GET['edit'])){
+$title = "Thêm thành viên";
+}else{
+$title = "Chỉnh sửa thông tin";
+}
+include 'inc/header.php';?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
 <?php

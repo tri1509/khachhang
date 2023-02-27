@@ -4,6 +4,15 @@
     include_once ($filepath. '/../helpers/format.php');
 ?>
 <?php
+    function alert_danger($alert){
+        $alert_danger = "<div class='alert alert-danger alert-dismissible fade show' role='alert'>$alert<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div></div>";
+        return $alert_danger ;
+    }
+    function alert_success($alert){
+        $alert_success = "<div class='alert alert-success alert-dismissible fade show' role='alert'>$alert<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div></div>";
+        return $alert_success ;
+    }
+
     class contact {
         private $db;
         private $fm;
@@ -11,6 +20,16 @@
         public function __construct() {
             $this->db = new Database();
             $this->fm = new Format();
+        }
+        public function del_user($id) {
+            $query = "DELETE FROM admin WHERE id = '$id'";
+            $result = $this->db->delete($query);
+            if($result){
+                header('location:list-user.php');
+            }else{
+                $alert= alert_danger("Lỗi thao tác !");
+                return $alert;
+            }
         }
         public function edit_pass($data,$code_md5) {
             $pass = mysqli_real_escape_string($this->db->link, $data['pass']);
@@ -21,30 +40,29 @@
             $result = $result_check_pass -> fetch_assoc();
             $get_pass = $result['pass'];
             if($pass == $get_pass){
-                if(empty($new_pass)) {
-                    $alert = "<div class='alert alert-danger' role='alert'>Không được để trống mật khẩu mới !</div>";
+                if($new_pass == "") {
+                    $alert = alert_danger("Không được để trống mật khẩu mới !");
                     return $alert;
                 }else{
                     $pattern = '/^[A-Za-z0-9_\.!@#$%^&*()]{6,32}$/';
                     if(!preg_match($pattern,$new_pass)){
-                        $alert = "<div class='alert alert-danger' role='alert'>Đặt mật khẩu phức tạp hơn !!!</div>";
+                        $alert = alert_danger("Đặt mật khẩu phức tạp hơn !!!");
                         return $alert;
                     }else{
-                        $query = "UPDATE admin SET 
-                        pass = '$new_pass'
-                        WHERE md5(code) = '$code_md5'";
+                        $md5_new_pass = md5($new_pass);
+                        $query = "UPDATE admin SET pass = '$md5_new_pass' WHERE md5(code) = '$code_md5'";
                         $result = $this->db->update($query);
                         if($result){
-                            $alert= "<div class='alert alert-success' role='alert'>Đổi mật khẩu thành công !</div>" ;
+                            $alert= alert_success("Đổi mật khẩu thành công !") ;
                             return $alert;
                         }else{
-                            $alert= "<span class='text-danger text-center'>Thất bại</span>" ;
+                            $alert= alert_danger("Lỗi thao tác !!!") ;
                             return $alert;
                         }
                     }
                 }
             }else{
-                $alert = "<div class='alert alert-danger' role='alert'>Mật khẩu cũ chưa đúng !!!</div>";
+                $alert = alert_danger("Mật khẩu cũ chưa đúng !!!");
                 return $alert;
             }
         }
@@ -59,10 +77,10 @@
                 WHERE md5(code) = '$code_md5'";
             $result = $this->db->update($query);
             if($result){
-                $alert= "<div class='alert alert-success' role='alert'>Đổi thông tin thành công !</div>" ;
+                $alert= alert_success("Đổi thông tin thành công &#x2713") ;
                 return $alert;
             }else{
-                $alert= "<span class='text-danger text-center'>Thất bại</span>" ;
+                $alert= alert_danger("Lỗi thao tác !") ;
                 return $alert;
             }
         }
@@ -94,9 +112,9 @@
                 $query = "INSERT INTO admin(pass,code,name,room) VALUE('$pass','$code','$name','$room')";
                 $result = $this->db->insert($query);
                 if($result) {
-                    $alert = "<div class='alert alert-success' role='alert'>Thêm tài khoản thành công !</div>";
+                    $alert = alert_danger("Thêm tài khoản thành công") ;
                 }else {
-                    $alert = "<div class='alert alert-danger' role='alert'>Đăng ký không thành công, vui lòng thử lại !</div>";
+                    $alert = alert_danger("Đăng ký không thành công, vui lòng thử lại !");
                 }
                 return $alert;
             }
@@ -128,7 +146,7 @@
             if($result){
                 header('location:list-contact.php');
             }else{
-                $alert= "<span class='text-danger text-center'>Thất bại</span>" ;
+                $alert= alert_danger("Lỗi thao tác !") ;
                 return $alert;
             }
         }
@@ -145,7 +163,7 @@
             if($result){
                 header('location:list-contact.php');
             }else{
-                $alert= "<span class='text-danger text-center'>lỗi rồi</span>";
+                $alert= alert_danger("Lỗi thao tác !");
                 return $alert;
             }
         }
@@ -166,10 +184,10 @@
             $query = "INSERT INTO nguon(name,code,job,phone,area,search,question,note) VALUES('$name','$code','$job','$phone','$area','$search','$question','$note')";
             $result = $this->db->insert($query);
             if($result){
-                $alert= "<div class='alert alert-success' role='alert'>Thêm thành công !</div>" ;
+                $alert= alert_success("Thêm thành công &#x2713") ;
                 return $alert;
             }else{
-                $alert= "<span class='text-danger text-center'>Thất bại</span>" ;
+                $alert= alert_danger("Lỗi thao tác !") ;
                 return $alert;
             }
         }
