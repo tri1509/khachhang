@@ -21,7 +21,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="shortcut icon" href="https://nina.vn/images/logo-2789.png" type="image/x-icon">
   <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="./css/lightslider.css">
+  <link rel="stylesheet" href="./css/nivo-slider.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <title><?php echo $title ?></title>
 </head>
 
@@ -31,8 +34,9 @@
       <div class="logo">
         <img src="https://nina.vn/upload/hinhanh/logothietkewebnina-3831.webp" alt="" srcset="" width="120">
       </div>
-      <div class="navbar-brand">
+      <div class="navbar-brand text-center">
         <a href="./">DESIGN BY M.TRÍ</a>
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
       </div>
       <div class="nav-right ">
         <div class="btn-group mr-auto">
@@ -60,7 +64,7 @@
       <div id="sidebar" class="bg-white">
         <ul id="sidebar-menu">
           <li class="nav-link active">
-            <a href="list-product.php">
+            <a href="">
               <div class="nav-link-icon d-inline-flex">
                 <i class="far fa-folder"></i>
               </div>
@@ -77,12 +81,25 @@
               <div class="nav-link-icon d-inline-flex">
                 <i class="far fa-folder"></i>
               </div>
-              Users
+              Thành viên
             </a>
             <i class="arrow fas fa-angle-down"></i>
             <ul class="sub-menu">
               <li><a href="add-user.php">Thêm mới</a></li>
               <li><a href="list-user.php">Danh sách</a></li>
+            </ul>
+          </li>
+          <li class="nav-link active">
+            <a href="" class="link">
+              <div class="nav-link-icon d-inline-flex">
+                <i class="far fa-folder"></i>
+              </div>
+              Tiện ích
+            </a>
+            <i class="arrow fas fa-angle-down"></i>
+            <ul class="sub-menu">
+              <li><a href="calculator.php">Máy tính</a></li>
+              <li><a href="todolist.php">Công việc</a></li>
             </ul>
           </li>
         </ul>
