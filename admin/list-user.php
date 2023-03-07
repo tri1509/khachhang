@@ -56,7 +56,7 @@ include 'inc/header.php';
                 <a href="add-user.php?edit=<?php echo md5($resule['code']) ; ?>"
                   class="btn btn-success btn-sm rounded-0 text-white" type="button" data-toggle="tooltip"
                   data-placement="top" title="Chỉnh sửa"><i class="fa fa-edit"></i></a>
-                <a href="edit-pass.php?edit=<?php echo md5($resule['code']) ; ?>"
+                <a href="edit-pass.php?edit=<?php echo md5($resule['code'])?>"
                   class="btn btn-info btn-sm rounded-0 text-white" type="button" data-toggle="tooltip"
                   data-placement="top" title="Đổi mật khẩu"><i class="fa fa-lock"></i></a>
                 <?php } ?>

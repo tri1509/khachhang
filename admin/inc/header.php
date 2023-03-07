@@ -19,10 +19,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <link rel="shortcut icon" href="https://nina.vn/images/logo-2789.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://nina.vn/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="./css/lightslider.css">
-  <link rel="stylesheet" href="./css/nivo-slider.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
   <title><?php echo $title ?></title>

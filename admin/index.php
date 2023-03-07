@@ -1,13 +1,238 @@
 <?php include 'inc/header.php';?>
 <div id="wp-content">
-  <div class="slider-wrapper">
-    <div id="mainSlider" class="nivoSlider">
-      <a><img src="https://nina.vn/upload/hinhanh/509836554584295.webp" alt="" /></a>
-      <a><img src="https://nina.vn/upload/hinhanh/817237421747114.webp" alt="" /></a>
-      <a><img src="https://nina.vn/upload/hinhanh/163047535990282.webp" alt="" /></a>
-      <a><img src="https://nina.vn/upload/hinhanh/300062775570792.webp" alt="" /></a>
+  <section id="support-top" class="support-top clearfix">
+    <div class="container">
+      <div id="support">
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">CSKH</span>
+            <a title="" class="cl-red show-hotline">0909.995.626</a>
+            <a href="tel:0909995626" title="" class="cl-red show-hotline-mobile">0909.995.626</a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mr.Hải</span>
+            <a title="" class="cl-red show-hotline">0903.177.419 </a>
+            <a href="tel:0903177419 " title="" class="cl-red show-hotline-mobile">0903.177.419 </a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mrs.Trang</span>
+            <a title="" class="cl-red show-hotline">0898.65.65.66</a>
+            <a href="tel:0898656566" title="" class="cl-red show-hotline-mobile">0898.65.65.66</a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mrs.Như Mơ</span>
+            <a title="" class="cl-red show-hotline">0903.848.955</a>
+            <a href="tel:0903848955" title="" class="cl-red show-hotline-mobile">0903.848.955</a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mrs.Hạnh</span>
+            <a title="" class="cl-red show-hotline">0938.385.139</a>
+            <a href="tel:0938385139" title="" class="cl-red show-hotline-mobile">0938.385.139</a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mr.Đồng</span>
+            <a title="" class="cl-red show-hotline">0902.875.586</a>
+            <a href="tel:0902875586" title="" class="cl-red show-hotline-mobile">0902.875.586</a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mr.Phúc</span>
+            <a title="" class="cl-red show-hotline">0909.800.190</a>
+            <a href="tel:0909800190" title="" class="cl-red show-hotline-mobile">0909.800.190</a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mr.Tròn</span>
+            <a title="" class="cl-red show-hotline">0909.135.454</a>
+            <a href="tel:0909135454" title="" class="cl-red show-hotline-mobile">0909.135.454</a>
+          </p>
+        </div>
+        <div class="items">
+          <p class="">
+            <span class="icon"><svg width="20px" height="20px" version="1.1" id="Layer_1_1_"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path style="fill: #C30E13;" d="M8,0C5.971,0,4.124,0.762,2.714,2.006l2.845,2.845C6.236,4.326,7.076,4,8,4s1.764,0.326,2.441,0.852l2.845-2.845
+  C11.876,0.762,10.029,0,8,0z"></path>
+                <path style="fill: #C30E13;" d="M5.559,11.148l-2.845,2.845C4.124,15.238,5.971,16,8,16s3.876-0.762,5.286-2.006l-2.845-2.845C9.764,11.674,8.924,12,8,12
+  S6.236,11.674,5.559,11.148z"></path>
+                <path style="fill: #C30E13;" d="M11.148,5.559C11.674,6.236,12,7.076,12,8c0,0.924-0.326,1.764-0.852,2.441l2.845,2.845C15.238,11.876,16,10.029,16,8
+  s-0.762-3.876-2.006-5.286L11.148,5.559z"></path>
+                <path style="fill: #C30E13;" d="M4.852,10.441C4.326,9.764,4,8.924,4,8c0-0.924,0.326-1.764,0.852-2.441L2.006,2.714C0.762,4.124,0,5.971,0,8
+  s0.762,3.876,2.006,5.286L4.852,10.441z"></path>
+              </svg></span>
+            <span class="name">Mr.Trọng</span>
+            <a title="" class="cl-red show-hotline">0908.656.425</a>
+            <a href="tel:0908656425" title="" class="cl-red show-hotline-mobile">0908.656.425</a>
+          </p>
+        </div>
+
+      </div>
     </div>
-  </div>
+  </section>
+  <section id="slider">
+    <div id="jssor_1"
+      style="position:relative;margin:0 auto;top:0px;left:0px;width:1180px;height:400px;overflow:hidden;visibility:hidden;">
+      <div data-u="loading" class="jssorl-oval"
+        style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
+        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;"
+          src="https://nina.vn/images/loading.gif" />
+      </div>
+      <div data-u="slides"
+        style="cursor:default;position:relative;top:0px;left:0px;width:1180px;height:400px;overflow:hidden;">
+        <div data-b="0">
+          <img data-u="image" src="https://nina.vn/upload/hinhanh/817237421747114.webp" alt="#" />
+        </div>
+        <div data-b="0">
+          <img data-u="image" src="https://nina.vn/upload/hinhanh/163047535990282.webp" alt="#" />
+        </div>
+        <div data-b="0">
+          <img data-u="image" src="https://nina.vn/upload/hinhanh/402937486580287.webp" alt="#" />
+        </div>
+        <div data-b="0">
+          <img data-u="image" src="https://nina.vn/upload/hinhanh/643937589601526.webp"
+            alt="[NINA] Thiết kế website cao cấp" />
+        </div>
+        <div data-b="0">
+          <img data-u="image" src="https://nina.vn/upload/hinhanh/300062775570792.webp"
+            alt="[NINA] Thiết kế website chuẩn seo" />
+        </div>
+        <div data-b="0">
+          <img data-u="image" src="https://nina.vn/upload/hinhanh/509836554584295.webp"
+            alt="[NINA] Thiết kế website theo yêu cầu" />
+        </div>
+      </div>
+      <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1"
+        data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+          <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+          </svg>
+        </div>
+      </div>
+      <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2"
+        data-scale="0.75" data-scale-left="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+        </svg>
+      </div>
+      <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2"
+        data-scale="0.75" data-scale-right="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+        </svg>
+      </div>
+    </div>
+  </section>
+
   <section id="packed-web" class="packed-web clearfix">
     <div class="container">
       <div class="packed-title">
@@ -357,7 +582,7 @@
       <div id="catagory">
         <div class="items">
           <div class="catagory-img">
-            <a href="thiet-ke-website.html">
+            <a href="">
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/thietkeweb510-3216.webp"
                 alt="Thiết kế website">
             </a>
@@ -374,7 +599,7 @@
         </div>
         <div class="items">
           <div class="catagory-img">
-            <a href="hosting.html">
+            <a href="">
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/webhosting461-4412.webp"
                 alt="Web hosting">
             </a>
@@ -391,7 +616,7 @@
         </div>
         <div class="items">
           <div class="catagory-img">
-            <a href="ten-mien.html">
+            <a href="">
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/domain1756-3179.webp" alt="Domain">
             </a>
           </div>
@@ -407,7 +632,7 @@
         </div>
         <div class="items">
           <div class="catagory-img">
-            <a href="email-server.html">
+            <a href="">
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/emailserver4142-2359.webp"
                 alt="Email server">
             </a>
@@ -517,7 +742,8 @@
         <div class="items animated zoomIn">
           <div class="project-desc">
             <div class="project-img">
-              <img src="https://nina.vn/upload/hinhanh/414892799638935.jpg" alt="Greenfield Organix Farm">
+              <img loading="lazy" src="https://nina.vn/upload/hinhanh/414892799638935.jpg"
+                alt="Greenfield Organix Farm">
             </div>
             <div class="project-htitle">
               <h3>
@@ -528,7 +754,7 @@
         <div class="items animated zoomIn">
           <div class="project-desc">
             <div class="project-img">
-              <img src="https://nina.vn/upload/hinhanh/908146547878204.jpg" alt="Trà sữa Bubble Tea">
+              <img loading="lazy" src="https://nina.vn/upload/hinhanh/908146547878204.jpg" alt="Trà sữa Bubble Tea">
             </div>
             <div class="project-htitle">
               <h3>
@@ -539,7 +765,7 @@
         <div class="items animated zoomIn">
           <div class="project-desc">
             <div class="project-img">
-              <img src="https://nina.vn/upload/hinhanh/122133239945243.jpg" alt="Việt Hà Cường">
+              <img loading="lazy" src="https://nina.vn/upload/hinhanh/122133239945243.jpg" alt="Việt Hà Cường">
             </div>
             <div class="project-htitle">
               <h3>
@@ -550,7 +776,8 @@
         <div class="items animated zoomIn">
           <div class="project-desc">
             <div class="project-img">
-              <img src="https://nina.vn/upload/hinhanh/963337364049612.jpg" alt="Nội thất Hợp Thành Phát">
+              <img loading="lazy" src="https://nina.vn/upload/hinhanh/963337364049612.jpg"
+                alt="Nội thất Hợp Thành Phát">
             </div>
             <div class="project-htitle">
               <h3>
@@ -561,7 +788,7 @@
         <div class="items animated zoomIn">
           <div class="project-desc">
             <div class="project-img">
-              <img src="https://nina.vn/upload/hinhanh/657713537883274.jpg"
+              <img loading="lazy" src="https://nina.vn/upload/hinhanh/657713537883274.jpg"
                 alt="Đá hoa cương - Trần thạch cao Nhất Phong">
             </div>
             <div class="project-htitle">
@@ -573,7 +800,7 @@
         <div class="items animated zoomIn">
           <div class="project-desc">
             <div class="project-img">
-              <img src="https://nina.vn/upload/hinhanh/307214836440124.jpg" alt="Dạ Lan Hotel">
+              <img loading="lazy" src="https://nina.vn/upload/hinhanh/307214836440124.jpg" alt="Dạ Lan Hotel">
             </div>
             <div class="project-htitle">
               <h3>
@@ -583,7 +810,7 @@
         </div>
         <div class="items animated zoomIn">
           <div class="project-desc">
-            <div class="project-img"><img src="https://nina.vn/upload/hinhanh/922558760691619.jpg"
+            <div class="project-img"><img loading="lazy" src="https://nina.vn/upload/hinhanh/922558760691619.jpg"
                 alt="Trường mầm non ngôi sao hạnh phúc"></div>
             <div class="project-htitle">
               <h3>Trường mầm non ngôi sao hạnh phúc</h3>
@@ -592,7 +819,7 @@
         </div>
         <div class="items animated zoomIn">
           <div class="project-desc">
-            <div class="project-img"><img src="https://nina.vn/upload/hinhanh/335171398337302.jpg"
+            <div class="project-img"><img loading="lazy" src="https://nina.vn/upload/hinhanh/335171398337302.jpg"
                 alt="Nhà may Ngọc Diễm"></div>
             <div class="project-htitle">
               <h3>Nhà may Ngọc Diễm</h3>
@@ -693,6 +920,12 @@
           </div>
         </div>
       </div>
+      <div class="t-center">
+        <a class="b-button-5 cursor-pointer" id="load-page">
+          <div>Tải thêm mẫu website khác</div>
+        </a>
+      </div>
+
     </div>
   </section>
 </div>
