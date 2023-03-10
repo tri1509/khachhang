@@ -12,6 +12,14 @@
         $alert_success = "<div class='alert alert-success alert-dismissible fade show' role='alert'>$alert<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div></div>";
         return $alert_success ;
     }
+    function sweetalert2($alert){
+        $alert_success ="<script>Swal.fire('$alert','Bấm OK để xác nhận !','success')</script>";
+        return $alert_success;
+    }
+    function Return_Confirm($alert){
+        $alert_confirm ="<script>Swal.fire('$alert','Bấm OK để xác nhận !','success')</script>";
+        return $alert_confirm;
+    }
 
     class contact {
         private $db;
@@ -112,7 +120,7 @@
                 $query = "INSERT INTO admin(pass,code,name,room) VALUE('$pass','$code','$name','$room')";
                 $result = $this->db->insert($query);
                 if($result) {
-                    $alert = alert_danger("Thêm tài khoản thành công") ;
+                    $alert = sweetalert2("Thêm tài khoản thành công &#x2713") ;
                 }else {
                     $alert = alert_danger("Đăng ký không thành công, vui lòng thử lại !");
                 }
@@ -184,7 +192,8 @@
             $query = "INSERT INTO nguon(name,code,job,phone,area,search,question,note) VALUES('$name','$code','$job','$phone','$area','$search','$question','$note')";
             $result = $this->db->insert($query);
             if($result){
-                $alert= alert_success("Thêm thành công &#x2713") ;
+                // $alert= alert_success("Thêm thành công &#x2713") ;
+                $alert= sweetalert2("Thêm thành công &#x2713") ;
                 return $alert;
             }else{
                 $alert= alert_danger("Lỗi thao tác !") ;

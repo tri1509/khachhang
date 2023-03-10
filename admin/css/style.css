@@ -319,7 +319,8 @@ ul#sidebar-menu * {
 #project .items {
   width: calc(100% / 3 - 20px);
   height: 470px;
-  overflow: hidden;
+  overflow: hidden;  
+  cursor: pointer;
   margin-bottom: 30px;
   display: none;
 }

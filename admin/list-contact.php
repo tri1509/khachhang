@@ -36,7 +36,7 @@ include 'inc/header.php';?>
           </thead>
           <tbody>
             <?php 
-                if($show) {
+                if($show){
                   $i=0;
                   while($resule = $show -> fetch_assoc()){
                     $i++;

@@ -12,8 +12,7 @@
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="./js/app.js"></script>
 <script src="./js/showtime.js"></script>
-<script defer="defer" async="async" type="text/javascript" src="https://nina.vn/js/jquery-3.5.1.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127751575-1"></script>
+<script src="./js/slider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>

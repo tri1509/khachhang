@@ -40,4 +40,28 @@ $(document).ready(function () {
       duration
     );
   });
+
+  $("body").on("click", ".list-package li", function (event) {
+    event.preventDefault();
+    var o = $(this);
+    var r = o.attr("rel");
+    $(".list-package li").removeClass("active");
+    o.addClass("active");
+
+    $(".content-package").removeClass("active");
+    $("#" + r).addClass("active");
+  });
+
+  // QUY TRÌNH THIẾT KẾ WEBSITE TẠI NINA
+
+  var ix = 1;
+  setInterval(function () {
+    var step = ".step" + ix;
+    $(".design-img img").removeClass("active");
+    $(step + " img").addClass("active");
+    ix++;
+    if (ix == 6) {
+      ix = 1;
+    }
+  }, 1000);
 });
