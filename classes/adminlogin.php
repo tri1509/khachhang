@@ -19,7 +19,7 @@
             $code = mysqli_real_escape_string($this->db->link,$code);
             $pass = mysqli_real_escape_string($this->db->link,$pass);
             if(empty($code) || empty($pass)) {
-                $alert = "<p class='text-danger'>Không được để trống !</p>";
+                $alert = sweet_error("Không được để trống !");
                 return $alert;
             }else{
                 $query = "SELECT * FROM admin WHERE code = '$code' AND pass = '$pass' LIMIT 1";
@@ -32,7 +32,7 @@
                     Session::set('adminCode',$value['code']);
                     header('location:index.php');
                 }else {
-                    $alert = "<p class='caption mb-4 text-danger'>Tài khoản hoặc mật khẩu không đúng !</p>";
+                    $alert = sweet_error("Tài khoản hoặc mật khẩu không đúng !");
                 }
                 return $alert;
             }

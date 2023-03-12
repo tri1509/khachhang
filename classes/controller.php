@@ -4,23 +4,6 @@
     include_once ($filepath. '/../helpers/format.php');
 ?>
 <?php
-    function alert_danger($alert){
-        $alert_danger = "<div class='alert alert-danger alert-dismissible fade show' role='alert'>$alert<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div></div>";
-        return $alert_danger ;
-    }
-    function alert_success($alert){
-        $alert_success = "<div class='alert alert-success alert-dismissible fade show' role='alert'>$alert<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div></div>";
-        return $alert_success ;
-    }
-    function sweetalert2($alert){
-        $alert_success ="<script>Swal.fire('$alert','Bấm OK để xác nhận !','success')</script>";
-        return $alert_success;
-    }
-    function Return_Confirm($alert){
-        $alert_confirm ="<script>Swal.fire('$alert','Bấm OK để xác nhận !','success')</script>";
-        return $alert_confirm;
-    }
-
     class contact {
         private $db;
         private $fm;

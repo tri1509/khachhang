@@ -16,7 +16,7 @@ include 'inc/header.php';?>
       </div>
       <div class="card-body">
         <form method="post" action="">
-          <div class="row">
+          <div class="row  animate__animated animate__lightSpeedInLeft">
             <div class="col-md-4 col-12">
               <div class="form-group">
                 <label for="name">Tên khách hàng</label>
@@ -62,7 +62,8 @@ include 'inc/header.php';?>
               </div>
             </div>
           </div>
-          <input type="submit" class="btn btn-primary" value="Thêm mới" name="add">
+          <input type="submit" class="btn btn-primary animate__animated animate__backInDown" value="Thêm mới"
+            name="add">
         </form>
       </div>
       <?php if(isset($insert)){echo $insert ; } ?>

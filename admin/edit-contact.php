@@ -24,7 +24,7 @@
       <?php if(isset($update)){echo $update ; } ?>
       <div class="card-body">
         <form method="post" action="">
-          <div class="row">
+          <div class="row animate__animated animate__bounceIn">
             <div class="col-md-4 col-12">
               <div class="form-group">
                 <label for="name">Tên khách hàng</label>
@@ -75,7 +75,8 @@
               </div>
             </div>
           </div>
-          <input type="submit" class="btn btn-primary" value="Cập nhật" name="edit">
+          <input type="submit" class="btn btn-primary animate__animated animate__backInRight" value="Cập nhật"
+            name="edit">
         </form>
       </div>
     </div>
