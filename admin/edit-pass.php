@@ -1,6 +1,7 @@
 <?php
 $title = "Đổi mật khẩu";
 include 'inc/header.php';?>
+<?php include 'inc/sidebar.php';?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
 <?php
@@ -26,7 +27,7 @@ include 'inc/header.php';?>
       </div>
       <div class="card-body">
         <form action="" class="pt-3" method="post">
-          <div class="row">
+          <div class="row animate__animated animate__jello">
             <div class="col-md-4 col-12">
               <div class="form-group">
                 <label for="pass">Nhập mật khẩu cũ</label>

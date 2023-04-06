@@ -1,6 +1,8 @@
 <?php
-$title = "Danh sách khách hàng";
-include 'inc/header.php';?>
+  $title = "Danh sách khách hàng";
+  include 'inc/header.php';
+  include 'inc/sidebar.php';
+?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
 <?php
@@ -19,7 +21,7 @@ include 'inc/header.php';?>
         <h5 class="m-0">Danh sách</h5>
       </div>
       <div class="card-body">
-        <table class="table table-striped table-checkall" id="table-admin">
+        <table class="table table-hover table-striped" id="table-admin">
           <thead>
             <tr>
               <th scope="col">#</th>

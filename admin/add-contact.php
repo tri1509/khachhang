@@ -1,6 +1,8 @@
 <?php
-$title = "Thêm khách hàng";
-include 'inc/header.php';?>
+  $title = "Thêm khách hàng";
+  include 'inc/header.php';
+  include 'inc/sidebar.php';
+?>
 <?php include '../classes/controller.php';?>
 <?php
 	$ct = new contact();		
@@ -16,7 +18,7 @@ include 'inc/header.php';?>
       </div>
       <div class="card-body">
         <form method="post" action="">
-          <div class="row  animate__animated animate__lightSpeedInLeft">
+          <div class="row animate__animated animate__lightSpeedInLeft">
             <div class="col-md-4 col-12">
               <div class="form-group">
                 <label for="name">Tên khách hàng</label>
@@ -26,39 +28,51 @@ include 'inc/header.php';?>
                 <label for="area">Khu vực</label>
                 <input class="form-control" type="text" name="area">
               </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="search">Thông qua</label>
+                    <select class="form-control" name="search">
+                      <option value=" ">----Chọn----</option>
+                      <option>Facebook</option>
+                      <option>Hồ sơ cty</option>
+                      <option>Map</option>
+                      <option>Khác</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="question">Đã có website chưa ?</label>
+                    <select class="form-control" name="question">
+                      <option value=" ">----Chọn----</option>
+                      <option>Có rồi</option>
+                      <option>Chưa có</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
               <div class="form-group">
-                <label for="job">Ngành nghề</label>
-                <input class="form-control" type="text" name="job">
+                <label for="time">Giờ gọi</label>
+                <input class="form-control" type="text" name="time">
               </div>
             </div>
             <div class="col-md-4 col-12">
               <div class="form-group">
-                <label for="question">Đã có website chưa ?</label>
-                <select class="form-control" name="question">
-                  <option value=" ">----Chọn----</option>
-                  <option>Có rồi</option>
-                  <option>Chưa có</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="search">Thông qua</label>
-                <select class="form-control" name="search">
-                  <option value=" ">----Chọn----</option>
-                  <option>Facebook</option>
-                  <option>Hồ sơ cty</option>
-                  <option>Map</option>
-                  <option>Khác</option>
-                </select>
+                <label for="job">Ngành nghề</label>
+                <input class="form-control" type="text" name="job">
               </div>
               <div class="form-group">
                 <label for="phone">Số điện thoại</label>
                 <input class="form-control" type="text" name="phone">
               </div>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-12">
               <div class="form-group">
                 <label for="note">Ghi chú</label>
-                <textarea class="form-control" type="text" name="note" rows="8" cols="20"></textarea>
+                <textarea name="note" class="ckeditor"></textarea>
               </div>
             </div>
           </div>

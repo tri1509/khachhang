@@ -46,15 +46,15 @@
             $check_code = "SELECT * FROM admin WHERE code='$code' LIMIT 1";
             $result_check = $this->db->select($check_code);
             if($result_check){
-                $alert = "<span class='caption mb-4 text-info'>Mã số này đã được đăng ký rồi, mời bạn dùng mã số khác !</span>";
+                $alert = sweet_error("Mã số này đã được đăng ký rồi, mời bạn dùng mã số khác !");
                 return $alert;
             }else{
                 $query = "INSERT INTO admin(pass,code,name,room) VALUE('$pass','$code','$name','$room')";
                 $result = $this->db->insert($query);
                 if($result) {
-                    $alert = "<p class='caption mb-4 text-success'>Đăng ký thành công ! Mời bạn <a href='dang-nhap'>Đăng nhập</a> </p>";
+                    $alert = sweetalert2("Đăng ký thành công !");
                 }else {
-                    $alert = "<p class='caption mb-4 text-danger'>Đăng ký không thành công, vui lòng thử lại !</p>";
+                    $alert = sweet_error("Đăng ký không thành công, vui lòng thử lại");
                 }
                 return $alert;
             }

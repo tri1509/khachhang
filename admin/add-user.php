@@ -1,10 +1,13 @@
 <?php
-if(!isset($_GET['edit'])){
-$title = "Thêm thành viên";
-}else{
-$title = "Chỉnh sửa thông tin";
-}
-include 'inc/header.php';?>
+  if(!isset($_GET['edit'])){
+  $title = "Thêm thành viên";
+  }else{
+  $title = "Chỉnh sửa thông tin";
+  }
+  include 'inc/header.php';
+  include 'inc/sidebar.php';
+?>
+<?php include 'data/support.php';?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
 <?php
@@ -97,7 +100,7 @@ include 'inc/header.php';?>
       <?php if(!isset($edit_user)) { ?>
       <div class="card-body">
         <form action="" class="pt-3" method="post">
-          <div class="row">
+          <div class="row animate__animated animate__jackInTheBox">
             <div class="col-md-4 col-12">
               <div class="form-group">
                 <label for="name">Họ và tên</label>
@@ -117,11 +120,11 @@ include 'inc/header.php';?>
                 <label for="room">Phòng</label>
                 <select class="form-control" id="room" name="room">
                   <option>---Chọn---</option>
-                  <option <?php if($rooms == "C. Vân"){echo "selected";}?>>C. Vân</option>
-                  <option <?php if($rooms == "A. Tèo"){echo "selected";}?>>A. Tèo</option>
-                  <option <?php if($rooms == "A. Quý"){echo "selected";}?>>A. Quý</option>
-                  <option <?php if($rooms == "C. Diễm"){echo "selected";}?>>C. Diễm</option>
-                  <option <?php if($rooms == "A. Tâm"){echo "selected";}?>>A. Tâm</option>
+                  <?php foreach($list_manage as $item) { ?>
+                  <option <?php if($rooms == $item['name']){echo "selected";}?>>
+                    <?php echo $item['name'] ?>
+                  </option>
+                  <?php } ?>
                 </select>
                 <span class="text-danger">
                   <?php if(!empty($error['room'])) { echo $error['room'] ; }?>
@@ -171,11 +174,9 @@ include 'inc/header.php';?>
                 <label for="room">Phòng</label>
                 <select class="form-control" id="room" name="room">
                   <option>Chọn</option>
-                  <option>C. Vân</option>
-                  <option>A. Tèo</option>
-                  <option>A. Quý</option>
-                  <option>C. Diễm</option>
-                  <option>A. Tâm</option>
+                  <?php foreach($list_manage as $item) { ?>
+                  <option><?php echo $item['name'] ?></option>
+                  <?php } ?>
                 </select>
                 <span class="text-danger">
                   <?php if(!empty($error['room'])) { echo $error['room'] ; }?>

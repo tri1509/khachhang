@@ -1,6 +1,7 @@
 <?php
-$title = "Danh sách thành viên";
-include 'inc/header.php';
+  $title = "Danh sách thành viên";
+  include 'inc/header.php';
+  include 'inc/sidebar.php';
 ?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>

@@ -9,8 +9,6 @@ $(document).ready(function () {
     $(".table-checkall tbody tr td input:checkbox").prop("checked", checked);
   });
 
-  $("#table-admin").DataTable();
-
   $("#password, #password_2").on("keyup", function () {
     if ($("#password").val() == $("#password_2").val()) {
       $("#add-user").removeAttr("disabled");
@@ -25,6 +23,40 @@ $(document).ready(function () {
     if ($("#project .items:hidden").length == 0) {
       $(".loading-page").fadeOut("slow");
     }
+  });
+  $("#table-admin").DataTable({
+    destroy: true,
+    dom: "lBfrtip",
+    bFilter: true,
+    aLengthMenu: [
+      [50, 100, 200, -1],
+      [50, 100, 200, "All"],
+    ],
+    buttons: [
+      {
+        extend: "copyHtml5",
+        exportOptions: {
+          columns: [0, ":visible"],
+        },
+      },
+      {
+        extend: "excelHtml5",
+        exportOptions: {
+          columns: ":visible",
+        },
+      },
+      {
+        extend: "pdfHtml5",
+        exportOptions: {
+          columns: [0, 1, 2, 5],
+        },
+      },
+      {
+        extend: "colvis",
+        postfixButtons: ["colvisRestore"],
+      },
+      "print",
+    ],
   });
   var offset = 500;
   var duration = 700;

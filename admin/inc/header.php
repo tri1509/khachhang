@@ -20,11 +20,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="shortcut icon" href="https://nina.vn/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/dataTables.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./ckeditor/ckeditor.js" type="text/javascript"></script>
   <title><?php echo $title ?></title>
 </head>
 
@@ -61,46 +62,3 @@
       </div>
     </nav>
     <div id="page-body" class="d-flex">
-      <div id="sidebar" class="bg-white">
-        <ul id="sidebar-menu">
-          <li class="nav-link active">
-            <a href="">
-              <div class="nav-link-icon d-inline-flex">
-                <i class="far fa-folder"></i>
-              </div>
-              Khách hàng
-            </a>
-            <i class="arrow fas fa-angle-down"></i>
-            <ul class="sub-menu">
-              <li><a href="add-contact.php">Thêm mới</a></li>
-              <li><a href="list-contact.php">Danh sách</a></li>
-            </ul>
-          </li>
-          <li class="nav-link active">
-            <a href="" class="link">
-              <div class="nav-link-icon d-inline-flex">
-                <i class="far fa-folder"></i>
-              </div>
-              Thành viên
-            </a>
-            <i class="arrow fas fa-angle-down"></i>
-            <ul class="sub-menu">
-              <li><a href="add-user.php">Thêm mới</a></li>
-              <li><a href="list-user.php">Danh sách</a></li>
-            </ul>
-          </li>
-          <li class="nav-link active">
-            <a href="" class="link">
-              <div class="nav-link-icon d-inline-flex">
-                <i class="far fa-folder"></i>
-              </div>
-              Tiện ích
-            </a>
-            <i class="arrow fas fa-angle-down"></i>
-            <ul class="sub-menu">
-              <li><a href="calculator.php">Máy tính</a></li>
-              <li><a href="todolist.php">Công việc</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>

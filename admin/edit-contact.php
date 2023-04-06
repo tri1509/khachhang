@@ -1,4 +1,5 @@
 <?php include 'inc/header.php';?>
+<?php include 'inc/sidebar.php';?>
 <?php include '../classes/controller.php';?>
 <?php
 	$ct = new contact();	
@@ -24,6 +25,7 @@
       <?php if(isset($update)){echo $update ; } ?>
       <div class="card-body">
         <form method="post" action="">
+
           <div class="row animate__animated animate__bounceIn">
             <div class="col-md-4 col-12">
               <div class="form-group">
@@ -34,44 +36,51 @@
                 <label for="area">Khu vực</label>
                 <input class="form-control" type="text" name="area" value="<?php echo $result['area'] ?>">
               </div>
-              <div class="form-group">
-                <label for="job">Ngành nghề</label>
-                <input class="form-control" type="text" name="job" value="<?php echo $result['job'] ?>">
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="search">Thông qua</label>
+                    <select class="form-control" name="search">
+                      <option value=" ">----Chọn----</option>
+                      <option <?php if($search == "Facebook"){ echo "selected" ; } ?>>Facebook</option>
+                      <option <?php if($search == "Hồ sơ cty"){ echo "selected" ; } ?>>Hồ sơ cty</option>
+                      <option <?php if($search == "Map"){ echo "selected" ; } ?>>Map</option>
+                      <option <?php if($search == "Khác"){ echo "selected" ; } ?>>Khác</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="question">Đã có website chưa ?</label>
+                    <select class="form-control" name="question">
+                      <option value=" ">----Chọn----</option>
+                      <option <?php if($question == "Có rồi"){ echo "selected" ; } ?>>Có rồi</option>
+                      <option <?php if($question == "Chưa có"){ echo "selected" ; } ?>>Chưa có</option>
+                    </select>
+                  </div>
+                </div>
               </div>
               <div class="form-group">
-                <label for="job">Ngày - giờ gọi</label>
+                <label for="time">Giờ gọi</label>
                 <input class="form-control" type="text" name="time" value="<?php echo $result['time'] ?>">
               </div>
             </div>
             <div class="col-md-4 col-12">
               <div class="form-group">
-                <label for="question">Đã có website chưa ?</label>
-                <select class="form-control" name="question">
-                  <option value=" ">----Chọn----</option>
-                  <option <?php if($question == "Có rồi"){ echo "selected" ; } ?>>Có rồi</option>
-                  <option <?php if($question == "Chưa có"){ echo "selected" ; } ?>>Chưa có</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="search">Thông qua</label>
-                <select class="form-control" name="search">
-                  <option value=" ">----Chọn----</option>
-                  <option <?php if($search == "Facebook"){ echo "selected" ; } ?>>Facebook</option>
-                  <option <?php if($search == "Hồ sơ cty"){ echo "selected" ; } ?>>Hồ sơ cty</option>
-                  <option <?php if($search == "Map"){ echo "selected" ; } ?>>Map</option>
-                  <option <?php if($search == "Khác"){ echo "selected" ; } ?>>Khác</option>
-                </select>
+                <label for="job">Ngành nghề</label>
+                <input class="form-control" type="text" name="job" value="<?php echo $result['job'] ?>">
               </div>
               <div class="form-group">
                 <label for="phone">Số điện thoại</label>
                 <input class="form-control" type="text" name="phone" value="<?php echo $result['phone'] ?>">
               </div>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-12">
               <div class="form-group">
                 <label for="note">Ghi chú</label>
-                <textarea class="form-control" type="text" name="note" rows="8"
-                  cols="20"><?php echo $result['note'] ?></textarea>
+                <textarea name="note" class="ckeditor"><?php echo $result['note'] ?></textarea>
               </div>
             </div>
           </div>

@@ -172,7 +172,8 @@
             $search = mysqli_real_escape_string($this->db->link,$data['search']);
             $phone = mysqli_real_escape_string($this->db->link,$data['phone']);
             $note = mysqli_real_escape_string($this->db->link,$data['note']);
-            $query = "INSERT INTO nguon(name,code,job,phone,area,search,question,note) VALUES('$name','$code','$job','$phone','$area','$search','$question','$note')";
+            $time = mysqli_real_escape_string($this->db->link,$data['time']);
+            $query = "INSERT INTO nguon(name,code,job,phone,area,search,question,note,time) VALUES('$name','$code','$job','$phone','$area','$search','$question','$note','$time')";
             $result = $this->db->insert($query);
             if($result){
                 // $alert= alert_success("Thêm thành công &#x2713") ;

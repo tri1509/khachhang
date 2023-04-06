@@ -69,7 +69,6 @@ a:hover {
   position: fixed;
   top: 0px;
   left: 0;
-  /* transform: translateX(-100%); */
 }
 
 #wp-content {
@@ -78,6 +77,12 @@ a:hover {
   min-height: 100vh;
   padding-top: 5.625rem;
   padding-left: 15rem;
+}
+
+#index-content {
+  padding-top: 5.625rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #content {
@@ -199,12 +204,9 @@ ul#sidebar-menu * {
 .project-title h3,
 .packed-title h2 {
   font-size: 30px;
-  font-weight: 500;
-  color: #252525;
   text-transform: uppercase;
-  margin: 10px 0 20px;
+  margin-bottom: 15px;
   text-align: center;
-  text-shadow: 1px 4px 7px #5a5a5a;
 }
 
 .design-title p {
@@ -319,7 +321,7 @@ ul#sidebar-menu * {
 #project .items {
   width: calc(100% / 3 - 20px);
   height: 470px;
-  overflow: hidden;  
+  overflow: hidden;
   cursor: pointer;
   margin-bottom: 30px;
   display: none;
@@ -1023,36 +1025,6 @@ ul#sidebar-menu * {
   max-width: 100%;
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes zoomIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    opacity: 1;
-  }
-}
-@keyframes zoomIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    opacity: 1;
-  }
-}
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
 .loading-page.none {
   display: none;
 }
