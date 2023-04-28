@@ -97,13 +97,13 @@
     <div class="full-package-web">
       <div class="container">
         <ul class="list-package">
-          <li class="active" rel="tab-cb">
+          <li class="active hover_sang2" rel="tab-cb">
             Gói cơ bản
           </li>
-          <li rel="tab-pt">
+          <li rel="tab-pt" class="hover_sang2">
             Gói phổ thông
           </li>
-          <li rel="tab-nc">
+          <li rel="tab-nc" class="hover_sang2">
             Gói nâng cao
           </li>
         </ul>
@@ -145,7 +145,8 @@
                   </li>
 
                 </ul>
-                <div class="btn-support cl-1"><a href="#" class="btn-views" data-package="CB01"><span>Liên hệ</span>
+                <div class="btn-support cl-1"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="CB01"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -185,7 +186,8 @@
                   </li>
 
                 </ul>
-                <div class="btn-support cl-2"><a href="#" class="btn-views" data-package="CB02"><span>Liên hệ</span>
+                <div class="btn-support cl-2"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="CB02"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -225,7 +227,8 @@
                   </li>
 
                 </ul>
-                <div class="btn-support cl-3"><a href="#" class="btn-views" data-package="CB03"><span>Liên hệ</span>
+                <div class="btn-support cl-3"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="CB03"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -262,7 +265,8 @@
                     <h3>Song ngữ</h3>
                   </li>
                 </ul>
-                <div class="btn-support cl-1"><a href="#" class="btn-views" data-package="PT01"><span>Liên hệ</span>
+                <div class="btn-support cl-1"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="PT01"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -295,7 +299,8 @@
                     <h3>Song ngữ</h3>
                   </li>
                 </ul>
-                <div class="btn-support cl-2"><a href="#" class="btn-views" data-package="PT02"><span>Liên hệ</span>
+                <div class="btn-support cl-2"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="PT02"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -328,7 +333,8 @@
                     <h3>Song ngữ</h3>
                   </li>
                 </ul>
-                <div class="btn-support cl-3"><a href="#" class="btn-views" data-package="PT03"><span>Liên hệ</span>
+                <div class="btn-support cl-3"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="PT03"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -362,7 +368,8 @@
                     <h3>Phí vận chuyển</h3>
                   </li>
                 </ul>
-                <div class="btn-support cl-1"><a href="#" class="btn-views" data-package="PT01"><span>Liên hệ</span>
+                <div class="btn-support cl-1"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="PT01"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -392,7 +399,8 @@
                     <h3>Phí vận chuyển</h3>
                   </li>
                 </ul>
-                <div class="btn-support cl-2"><a href="#" class="btn-views" data-package="PT02"><span>Liên hệ</span>
+                <div class="btn-support cl-2"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="PT02"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -422,7 +430,8 @@
                     <h3>Phí vận chuyển</h3>
                   </li>
                 </ul>
-                <div class="btn-support cl-3"><a href="#" class="btn-views" data-package="PT03"><span>Liên hệ</span>
+                <div class="btn-support cl-3"><a href="#" class="btn-views hvr-float-shadow"
+                    data-package="PT03"><span>Liên hệ</span>
                     <span>báo giá</span></a></div>
               </div>
             </div>
@@ -434,8 +443,8 @@
   <section id="catagory-top" class="catagory-top clearfix">
     <div class="container">
       <div id="catagory">
-        <div class="items">
-          <div class="catagory-img">
+        <div class="items showtotop">
+          <div class="catagory-img hover_xam">
             <a>
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/thietkeweb510-3216.webp"
                 alt="Thiết kế website">
@@ -451,8 +460,8 @@
               trang quản trị dễ dàng, bảo mật.</p>
           </div>
         </div>
-        <div class="items">
-          <div class="catagory-img">
+        <div class="items showtotop delay-02">
+          <div class="catagory-img hover_xam">
             <a>
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/webhosting461-4412.webp"
                 alt="Web hosting">
@@ -468,8 +477,8 @@
               Internet một cách hiệu quả và tiết kiệm chi phí.</p>
           </div>
         </div>
-        <div class="items">
-          <div class="catagory-img">
+        <div class="items showtotop delay-04">
+          <div class="catagory-img hover_xam">
             <a>
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/domain1756-3179.webp" alt="Domain">
             </a>
@@ -484,8 +493,8 @@
               Record,MX Record.</p>
           </div>
         </div>
-        <div class="items">
-          <div class="catagory-img">
+        <div class="items showtotop delay-06">
+          <div class="catagory-img hover_xam">
             <a>
               <img width="300" height="240" src="https://nina.vn/upload/baiviet/emailserver4142-2359.webp"
                 alt="Email server">
@@ -511,7 +520,7 @@
         <h3>QUY TRÌNH THIẾT KẾ WEBSITE TẠI NINA</h3>
       </div>
       <div id="design">
-        <div class="items">
+        <div class="items showtoright delay-02">
           <div class="design-desc">
             <div class="design-img step1">
               <a>
@@ -525,7 +534,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items showtoright">
           <div class="design-desc">
             <div class="design-img step2">
               <a>
@@ -539,7 +548,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items showtotop">
           <div class="design-desc">
             <div class="design-img step3">
               <a>
@@ -553,7 +562,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items showtoleft">
           <div class="design-desc">
             <div class="design-img step4">
               <a>
@@ -567,7 +576,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items showtoleft delay-02">
           <div class="design-desc">
             <div class="design-img step5">
               <a>
@@ -597,7 +606,7 @@
         <?php foreach($list_web as $web) { ?>
         <div class="items animate__animated animate__zoomIn">
           <div class="project-desc">
-            <div class="project-img">
+            <div class="project-img hover_sang2">
               <img src="<?php echo $web['link'] ?>" alt="<?php echo $web['name'] ?>">
             </div>
             <div class="project-htitle">

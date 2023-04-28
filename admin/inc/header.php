@@ -30,9 +30,27 @@
 </head>
 
 <body>
+  <?php
+  if (session_id() === '')
+  session_start();
+  if( isset( $_SESSION['popup'] ) ){
+      $_SESSION['popup'] += 1;
+  }else{
+      $_SESSION['popup'] = 1;
+  }
+  $luotvao = $_SESSION['popup'];
+  if ($luotvao == '1') {
+  ?>
+  <div id="untree_co--overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-info" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <?php } ?>
   <div id="warpper" class="nav-fixed">
     <nav class="topnav shadow navbar-light bg-white d-flex">
-      <div class="logo">
+      <div class="logo hrv-rotateY">
         <img src="https://nina.vn/upload/hinhanh/logothietkewebnina-3831.webp" alt="" srcset="" width="120">
       </div>
       <div class="navbar-brand text-center">

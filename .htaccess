@@ -1,3 +1,6 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine on RewriteRule ^$ admin/ [L] RewriteRule (.*) admin/$1 [L]
-</IfModule>
+  RewriteEngine on
+   RewriteRule  ^$ admin/    [L]
+    RewriteRule  (.*) admin/$1 [L]
+  </IfModule>
+

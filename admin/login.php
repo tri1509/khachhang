@@ -4,7 +4,7 @@ include '../lib/validation.php';
 ?>
 <?php
 	$login = new adminlogin();		
-	if($_SERVER['REQUEST_METHOD'] === 'POST') {
+	if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["btn_login"])) {
 		$code = $_POST['code'];
 		$pass = md5($_POST['pass']);
 		$login_check = $login->login($code,$pass);

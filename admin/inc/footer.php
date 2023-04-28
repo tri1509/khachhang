@@ -7,12 +7,22 @@
       d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
   </svg>
 </div>
-
+<script>
+let items = document.querySelectorAll('.items');
+document.addEventListener('scroll', (event) => {
+  items.forEach(item => {
+    if (item.offsetTop - window.scrollY < 550) {
+      item.classList.add('active');
+    }
+  })
+})
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="./js/app.js"></script>
 <script src="./js/showtime.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/chongcoppy.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="./js/jquery_dataTables.js"></script>
@@ -31,6 +41,7 @@ $("body").hotline({
   position: "fixed",
 });
 </script>
+<script type="text/javascript" src="https://nhanh.vn/js/events/newyear.js"></script>
 </body>
 
 </html>

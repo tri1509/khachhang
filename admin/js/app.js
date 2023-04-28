@@ -16,7 +16,7 @@ $(document).ready(function () {
       $("#add-user").attr("disabled", "disabled");
     }
   });
-  $("#project .items").slice(0, 3).show();
+  $("#project .items").slice(0, 6).show();
   $("#load-page").on("click", function (e) {
     e.preventDefault();
     $("#project .items:hidden").slice(0, 3).slideDown();
@@ -31,31 +31,6 @@ $(document).ready(function () {
     aLengthMenu: [
       [50, 100, 200, -1],
       [50, 100, 200, "All"],
-    ],
-    buttons: [
-      {
-        extend: "copyHtml5",
-        exportOptions: {
-          columns: [0, ":visible"],
-        },
-      },
-      {
-        extend: "excelHtml5",
-        exportOptions: {
-          columns: ":visible",
-        },
-      },
-      {
-        extend: "pdfHtml5",
-        exportOptions: {
-          columns: [0, 1, 2, 5],
-        },
-      },
-      {
-        extend: "colvis",
-        postfixButtons: ["colvisRestore"],
-      },
-      "print",
     ],
   });
   var offset = 500;
@@ -96,4 +71,7 @@ $(document).ready(function () {
       ix = 1;
     }
   }, 1000);
+  ("use strict");
+  $(".loader").delay(700).fadeOut("slow");
+  $("#untree_co--overlayer").delay(700).fadeOut("slow");
 });

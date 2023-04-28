@@ -1,5 +1,6 @@
 a {
   color: #787272;
+  cursor: pointer;
 }
 
 a:hover {
@@ -20,6 +21,28 @@ a:hover {
 
 .p-relative {
   position: relative !important;
+}
+
+#untree_co--overlayer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 7100;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader {
+  z-index: 7700;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .topnav .navbar-brand {
@@ -1046,4 +1069,276 @@ ul#sidebar-menu * {
 #top-up:hover {
   color: #dc3545;
   transform: scale(1.2);
+}
+
+.hover_xam {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.hover_xam:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -khtml-opacity: 1;
+  -o-opacity: 1;
+  -ms-opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  width: 0;
+  height: 0;
+  z-index: 3;
+}
+
+.hover_xam:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -khtml-opacity: 1;
+  -o-opacity: 1;
+  -ms-opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  width: 0;
+  height: 0;
+  z-index: 2;
+}
+
+.hover_xam:hover:before,
+.hover_xam:hover:after {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transition-duration: 1.3s;
+  -moz-transition-duration: 1.3s;
+  -ms-transition-duration: 1.3s;
+  -o-transition-duration: 1.3s;
+  transition-duration: 1.3s;
+  -khtml-opacity: 0;
+  -o-opacity: 0;
+  -ms-opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hover_sang2 {
+  position: relative;
+  overflow: hidden;
+}
+.hover_sang2:before {
+  position: absolute;
+  top: 0;
+  left: -85%;
+  z-index: 10;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.hover_sang2:hover:before {
+  transition: 1s;
+  left: 100%;
+}
+.hover_sang {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.hover_sang:hover:before {
+  left: 0;
+  top: 0;
+}
+.hover_sang:before {
+  left: -100%;
+  top: -100%;
+}
+.hover_sang:after {
+  bottom: -100%;
+  right: -100%;
+}
+.hover_sang:before,
+.hover_sang:after {
+  display: block;
+}
+.hover_sang:before,
+.hover_sang:after {
+  background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  z-index: 8;
+}
+.hover_sang:hover img {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.hover_sang img {
+  transition: 0.7s;
+}
+.hover_sang:hover:after {
+  right: 0;
+  bottom: 0;
+}
+
+.showtotop {
+  opacity: 0;
+}
+.active.showtotop {
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.showtoright {
+  opacity: 0;
+}
+.active.showtoright {
+  animation: showright 1s ease-in-out 1 forwards;
+}
+.showtoleft {
+  opacity: 0;
+}
+.active.showtoleft {
+  animation: showleft 1s ease-in-out 1 forwards;
+}
+@keyframes showleft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showright {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showtop {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.delay-02 {
+  animation-delay: 0.2s !important;
+}
+.delay-04 {
+  animation-delay: 0.4s !important;
+}
+.delay-06 {
+  animation-delay: 0.6s !important;
+}
+
+.hrv-rotateY img {
+  transition: all 0.9s ease 0s;
+}
+.hrv-rotateY:hover {
+  text-decoration: none;
+}
+.hrv-rotateY:hover img {
+  transition: all 0.7s ease 0s;
+  transform: rotateY(180deg);
+  text-decoration: none;
+}
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse,
+    rgba(0, 0, 0, 0.35) 0,
+    transparent 80%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0,
+    transparent 80%
+  );
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:active,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.hvr-float-shadow:active:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:hover:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
 }
