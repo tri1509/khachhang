@@ -89,9 +89,9 @@ table.dataTable thead > tr > td.sorting_desc_disabled:before {
   content: "▲";
   content: "▲" /"";
   color: #000;
-  border: solid#000 1px;
+  border: none;
   padding: 2px;
-  font-size: 1rem;
+  font-size: 10px;
 }
 
 table.dataTable thead > tr > th.sorting:after,
@@ -108,9 +108,9 @@ table.dataTable thead > tr > td.sorting_desc_disabled:after {
   content: "▼";
   content: "▼" /"";
   color: #000;
-  border: solid#000 1px;
+  border: none;
   padding: 2px;
-  font-size: 1rem;
+  font-size: 10px;
 }
 
 table.dataTable thead > tr > th.sorting_asc:before,
@@ -316,11 +316,6 @@ table.dataTable tbody td.dt-body-nowrap {
   white-space: nowrap;
 }
 
-/*! Bootstrap 5 integration for DataTables
- *
- * ©2020 SpryMedia Ltd, all rights reserved.
- * License: MIT datatables.net/license/mit
- */
 table.dataTable {
   clear: both;
   margin-top: 6px !important;
@@ -384,6 +379,16 @@ table.dataTable.table-hover > tbody > tr.selected:hover > * {
   box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-selected), 0.975);
 }
 
+div.dataTables_length,
+div.dataTables_filter {
+  width: 50%;
+  display: inline-flex;
+}
+
+div.dataTables_filter {
+  justify-content: end;
+}
+
 div.dataTables_wrapper div.dataTables_length label {
   font-weight: normal;
   text-align: left;
@@ -391,9 +396,10 @@ div.dataTables_wrapper div.dataTables_length label {
 }
 
 div.dataTables_wrapper div.dataTables_length select {
-  width: auto;
+  width: 100px;
+  height: 30px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #007bff;
   border-radius: 2px;
 }
 
@@ -406,8 +412,11 @@ div.dataTables_wrapper div.dataTables_filter label {
 div.dataTables_wrapper div.dataTables_filter input {
   margin-left: 0.2em;
   display: inline-block;
-  width: auto;
-  border: 1px solid #0000008a;
+  height: 30px;
+  width: 300px;
+  padding: 0 10px;
+  margin-left: 20px;
+  border: 1px solid #007bff;
   border-radius: 5px;
 }
 

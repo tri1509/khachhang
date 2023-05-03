@@ -33,8 +33,9 @@ $(document).ready(function () {
       [50, 100, 200, "All"],
     ],
   });
+
   var offset = 500;
-  var duration = 700;
+  var duration = 100;
   $(window).scroll(function () {
     if ($(this).scrollTop() > offset) $("#top-up").fadeIn(duration);
     else $("#top-up").fadeOut(duration);
@@ -72,6 +73,39 @@ $(document).ready(function () {
     }
   }, 1000);
   ("use strict");
+
   $(".loader").delay(700).fadeOut("slow");
   $("#untree_co--overlayer").delay(700).fadeOut("slow");
+
+  var path = window.location.href;
+
+  $("#sidebar-menu .sub-menu li a").each(function () {
+    if (this.href === path) {
+      $(this).addClass("text-primary");
+    }
+  });
+
+  $(".copy").tooltip({ animation: true, trigger: "manual", title: "đã copy" });
+  $(".copy")
+    .click(function () {
+      text = $(this).text();
+      $(this).tooltip("show");
+      if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+      }
+      navigator.clipboard.writeText(text).then(
+        function () {
+          console.log("Async: Copying to clipboard was successful!");
+        },
+        function (err) {
+          console.error("Async: Could not copy text: ", err);
+        }
+      );
+    })
+    .mouseout(function () {
+      $(this).tooltip("hide");
+    });
+
+  $(".split").str.split(" ", 3);
 });

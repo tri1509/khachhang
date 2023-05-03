@@ -102,21 +102,21 @@
         <form action="" class="pt-3" method="post">
           <div class="row animate__animated animate__jackInTheBox">
             <div class="col-md-4 col-12">
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="name">Họ và tên</label>
                 <input class="form-control" type="text" name="name" id="name" value="<?php echo $resule['name'] ?>">
                 <span class="text-danger">
                   <?php if(!empty($error['name'])) { echo $error['name'] ; }?>
                 </span>
               </div>
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="code">Mã số nhân viên</label>
                 <input class="form-control" type="text" name="code" id="code" value="<?php echo $resule['code'] ?>">
                 <span class="text-danger">
                   <?php if(!empty($error['code'])) { echo $error['code'] ; }?>
                 </span>
               </div>
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="room">Phòng</label>
                 <select class="form-control" id="room" name="room">
                   <option>---Chọn---</option>
@@ -147,14 +147,14 @@
         <form action="" class="pt-3" method="post">
           <div class="row">
             <div class="col-md-4 col-12">
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="name">Họ và tên</label>
                 <input class="form-control" type="text" name="name" id="name">
                 <span class="text-danger">
                   <?php if(!empty($error['name'])) { echo $error['name'] ; }?>
                 </span>
               </div>
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="code">Mã số nhân viên</label>
                 <input class="form-control" type="text" name="code" id="code">
                 <span class="text-danger">
@@ -163,14 +163,14 @@
               </div>
             </div>
             <div class="col-md-4 col-12">
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="">Quyền</label>
                 <select class="form-control" id="" name="">
                   <option>User</option>
                   <option>Administrator</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="room">Phòng</label>
                 <select class="form-control" id="room" name="room">
                   <option>Chọn</option>
@@ -184,11 +184,11 @@
               </div>
             </div>
             <div class="col-md-4 col-12">
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="pass">Mật khẩu</label>
                 <input class="form-control" type="password" name="pass" id="password">
               </div>
-              <div class="form-group">
+              <div class=" form-group mb-3">
                 <label for="pass_2">Nhập lại mật khẩu</label>
                 <input class="form-control" type="password" name="pass_2" id="password_2">
               </div>

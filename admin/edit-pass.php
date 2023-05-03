@@ -29,11 +29,11 @@ include 'inc/header.php';?>
         <form action="" class="pt-3" method="post">
           <div class="row animate__animated animate__jello">
             <div class="col-md-4 col-12">
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <label for="pass">Nhập mật khẩu cũ</label>
                 <input class="form-control" type="password" name="pass" id="pass">
               </div>
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <label for="new_pass">Nhật mật khẩu mới</label>
                 <input class="form-control" type="password" name="new_pass" id="new_pass">
               </div>

@@ -20,53 +20,53 @@
         <form method="post" action="">
           <div class="row animate__animated animate__lightSpeedInLeft">
             <div class="col-md-4 col-12">
-              <div class="form-group">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="name" placeholder=" ">
                 <label for="name">Tên khách hàng</label>
-                <input class="form-control" type="text" name="name">
               </div>
-              <div class="form-group">
+              <div class="form-floating mb-3">
+                <input class="form-control" type="text" name="area" placeholder=" ">
                 <label for="area">Khu vực</label>
-                <input class="form-control" type="text" name="area">
               </div>
             </div>
             <div class="col-md-4 col-12">
               <div class="row">
                 <div class="col-6">
-                  <div class="form-group">
-                    <label for="search">Thông qua</label>
-                    <select class="form-control" name="search">
+                  <div class="form-floating mb-3">
+                    <select class="form-select" name="search">
                       <option value=" ">----Chọn----</option>
                       <option>Facebook</option>
                       <option>Hồ sơ cty</option>
                       <option>Map</option>
                       <option>Khác</option>
                     </select>
+                    <label for="search">Thông qua</label>
                   </div>
                 </div>
                 <div class="col-6">
-                  <div class="form-group">
-                    <label for="question">Đã có website chưa ?</label>
-                    <select class="form-control" name="question">
+                  <div class="form-floating mb-3">
+                    <select class="form-select" name="question">
                       <option value=" ">----Chọn----</option>
-                      <option>Có rồi</option>
-                      <option>Chưa có</option>
+                      <option>Rồi</option>
+                      <option>Chưa</option>
                     </select>
+                    <label for="question">WEB</label>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-floating mb-3">
+                <input class="form-control" type="text" name="time" placeholder=" ">
                 <label for="time">Giờ gọi</label>
-                <input class="form-control" type="text" name="time">
               </div>
             </div>
             <div class="col-md-4 col-12">
-              <div class="form-group">
+              <div class="form-floating mb-3">
+                <input class="form-control" type="text" name="job" placeholder=" ">
                 <label for="job">Ngành nghề</label>
-                <input class="form-control" type="text" name="job">
               </div>
-              <div class="form-group">
+              <div class="form-floating mb-3">
+                <input class="form-control" type="text" name="phone" placeholder=" ">
                 <label for="phone">Số điện thoại</label>
-                <input class="form-control" type="text" name="phone">
               </div>
             </div>
             <div class="col-12">

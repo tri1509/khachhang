@@ -85,12 +85,13 @@
    }
 
    function alert_danger($alert){
-      $alert_danger = "<div class='alert alert-danger alert-dismissible fade show' role='alert'>$alert<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div></div>";
+      $alert_danger = "<div class='alert alert-danger d-flex align-items-center alert-dismissible fade show' role='alert'>$alert<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
       return $alert_danger ;
    }
+   
    function alert_success($alert){
-         $alert_success = "<div class='alert alert-success alert-dismissible fade show' role='alert'>$alert<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div></div>";
-         return $alert_success ;
+      $alert_success = "<div class='alert alert-success d-flex align-items-center alert-dismissible fade show' role='alert'>$alert<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
+      return $alert_success ;
    }
    function sweetalert2($alert){
          $alert_success ="<script>Swal.fire('$alert','Bấm OK để xác nhận !','success')</script>";

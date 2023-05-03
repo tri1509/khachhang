@@ -2,6 +2,7 @@
   $title = "Danh sách khách hàng";
   include 'inc/header.php';
   include 'inc/sidebar.php';
+  require 'PHPExcel/Classes/PHPExcel.php';
 ?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
@@ -25,15 +26,15 @@
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Tên KH</th>
-              <th scope="col">SDT</th>
-              <th scope="col">Khu vực</th>
-              <th scope="col">Ngành nghề</th>
-              <th scope="col">website</th>
-              <th scope="col">Thông qua</th>
-              <th scope="col">Giờ gọi</th>
-              <th scope="col">Ghi chú</th>
-              <th scope="col">Tác vụ</th>
+              <th scope="col">NAME</th>
+              <th scope="col">PHONE</th>
+              <th scope="col">AREA</th>
+              <th scope="col">JOB</th>
+              <th scope="col">WEB</th>
+              <th scope="col">AT</th>
+              <th scope="col">TIME</th>
+              <th scope="col">NOTE</th>
+              <th scope="col" style="width: 100px !important">ACTION</th>
             </tr>
           </thead>
           <tbody>
@@ -43,17 +44,25 @@
                   while($resule = $show -> fetch_assoc()){
                     $i++;
               ?>
-            <tr class="">
+            <tr>
               <td><?php echo $i ?></td>
-              <td><?php echo $resule['name'] ?></td>
-              <td><?php echo $resule['phone'] ?></td>
+              <td><span class="text-capitalize fw-semibold"><?php echo $resule['name'] ?></span></td>
+              <td>
+                <?php if($resule['phone']){ ?>
+                <button type="button" class="btn btn-info copy"><?php echo $resule['phone'] ?></button>
+                <?php } ?>
+              </td>
               <td><?php echo $resule['area'] ?></td>
               <td><?php echo $resule['job'] ?></td>
-              <td><?php echo $resule['question'] ?></td>
+              <td>
+                <?php if($resule['question'] != " "){ ?>
+                <span class="badge text-bg-warning"><?php echo $resule['question'] ?></span>
+                <?php } ?>
+              </td>
               <td><?php echo $resule['search'] ?></td>
               <td><?php echo $resule['time'] ?></td>
               <td><?php echo $resule['note'] ?></td>
-              <td>
+              <td style="width: 100px !important">
                 <a href="edit-contact.php?id=<?php echo $resule['id'] ?>"
                   class="btn btn-success btn-sm rounded-0 text-white" type="button" data-toggle="tooltip"
                   data-placement="top" title="Sửa"><i class="fa fa-edit"></i></a>

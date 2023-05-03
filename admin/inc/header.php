@@ -17,7 +17,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="shortcut icon" href="https://nina.vn/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -59,7 +59,7 @@
       </div>
       <div class="nav-right ">
         <div class="btn-group mr-auto">
-          <button type="button" class="btn dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="plus-icon fas fa-plus-circle"></i>
           </button>
           <div class="dropdown-menu">
@@ -68,8 +68,7 @@
           </div>
         </div>
         <div class="btn-group">
-          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <?php echo $name." - ".$code ; ?>
           </button>
           <div class="dropdown-menu dropdown-menu-right">

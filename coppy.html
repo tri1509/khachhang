@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Copy to clipboard html</title>
+    <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      display: grid;
+      height: 100%;
+      place-items: center;
+    }
+    ::selection {
+      color: #fff;
+      background: #483d8b;
+    }
+    textarea {
+      padding: 10px;
+      font-size: 17px;
+      resize: none;
+      text-align: justify;
+      color: #202020;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    textarea:focus {
+      outline-color: #1e90ff;
+      border-color: #1e90ff;
+    }
+    .btn {
+      margin: 5px 0 40px 0;
+    }
+    .btn button {
+      padding: 9px 15px;
+      font-size: 17px;
+      text-transform: uppercase;
+      font-weight: 500;
+      background: linear-gradient(to right, #b993d6, #8ca6db);
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: 1px;
+      border-radius: 3px;
+      outline: none;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .btn .tooltip {
+      position: relative;
+      margin-left: -10px;
+      font-size: 17px;
+      font-weight: 500;
+      color: #f2f2f2;
+      z-index: -1;
+      background: #ff1493;
+      padding: 5px 10px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s, margin-left 0.4s;
+    }
+    .btn .tooltip.show {
+      margin-left: 10px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .tooltip:before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background: #ff1493;
+      top: 50%;
+      left: -5px;
+      z-index: -1;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <textarea id="copyText" cols="60" rows="5">kkk</textarea>
+      <br />
+      <div class="btn">
+        <button>Sao Chép Vào Clipboard</button>
+        <span class="tooltip">copied</span>
+      </div>
+      <textarea
+        cols="60"
+        id="pasteText"
+        placeholder="nội dung sao chép vào đây"
+        rows="5"
+      ></textarea>
+    </div>
+  </body>
+  <script>
+    const copyText = document.querySelector("#copyText");
+    const pasteText = document.querySelector("#pasteText");
+    const button = document.querySelector("button");
+    const tooltip = document.querySelector(".tooltip");
+    button.addEventListener("click", function () {
+      copyText.select();
+      pasteText.value = "";
+      tooltip.classList.add("show");
+      setTimeout(function () {
+        tooltip.classList.remove("show");
+      }, 700);
+      if (document.execCommand("copy")) {
+        pasteText.focus();
+      } else {
+        alert("Xảy ra lỗi");
+      }
+    });
+  </script>
+</html>
