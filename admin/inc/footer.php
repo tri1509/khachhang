@@ -40,7 +40,6 @@ $("body").hotline({
   position: "fixed",
 });
 </script>
-<script type="text/javascript" src="https://nhanh.vn/js/events/newyear.js"></script>
 </body>
 
 </html>

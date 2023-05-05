@@ -2,7 +2,7 @@
   $title = "Danh sách khách hàng";
   include 'inc/header.php';
   include 'inc/sidebar.php';
-  require 'PHPExcel/Classes/PHPExcel.php';
+  // require 'PHPExcel/Classes/PHPExcel.php';
 ?>
 <?php include '../classes/controller.php';?>
 <?php include_once '../helpers/format.php';?>
@@ -21,8 +21,8 @@
       <div class="card-header font-weight-bold d-flex justify-content-between align-items-center">
         <h5 class="m-0">Danh sách</h5>
       </div>
-      <div class="card-body">
-        <table class="table table-hover table-striped" id="table-admin">
+      <div class="card-body table-responsive">
+        <table class="table table-hover table-striped align-middle" id="table-admin">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -45,7 +45,7 @@
                     $i++;
               ?>
             <tr>
-              <td><?php echo $i ?></td>
+              <th class="text-secondary"><?php echo $i ?></th>
               <td><span class="text-capitalize fw-semibold"><?php echo $resule['name'] ?></span></td>
               <td>
                 <?php if($resule['phone']){ ?>
@@ -66,7 +66,8 @@
                 <a href="edit-contact.php?id=<?php echo $resule['id'] ?>"
                   class="btn btn-success btn-sm rounded-0 text-white" type="button" data-toggle="tooltip"
                   data-placement="top" title="Sửa"><i class="fa fa-edit"></i></a>
-                <a href="?del=<?php echo $resule['id'] ?>" onclick="return confirm('Bạn có muốn xoá không?')"
+                <a href="?del=<?php echo $resule['id'] ?>"
+                  onclick="return confirm('Bạn có muốn xoá <?php echo $resule['name'] ?> không?')"
                   class="btn btn-danger btn-sm rounded-0 text-white" type="button" data-toggle="tooltip"
                   data-placement="top" title="Xoá"><i class="fa fa-trash"></i></a>
               </td>
@@ -78,4 +79,5 @@
     </div>
   </div>
 </div>
+
 <?php include 'inc/footer.php';?>

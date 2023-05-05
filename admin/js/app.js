@@ -16,6 +16,8 @@ $(document).ready(function () {
       $("#add-user").attr("disabled", "disabled");
     }
   });
+
+  // KHÁCH HÀNG THIẾT KẾ WEBSITE TẠI NINA
   $("#project .items").slice(0, 6).show();
   $("#load-page").on("click", function (e) {
     e.preventDefault();
@@ -24,6 +26,8 @@ $(document).ready(function () {
       $(".loading-page").fadeOut("slow");
     }
   });
+
+  // table-admin
   $("#table-admin").DataTable({
     destroy: true,
     dom: "lBfrtip",
@@ -34,6 +38,7 @@ $(document).ready(function () {
     ],
   });
 
+  // VỀ ĐẦU TRANG
   var offset = 500;
   var duration = 100;
   $(window).scroll(function () {
@@ -48,6 +53,8 @@ $(document).ready(function () {
       duration
     );
   });
+
+  // BẢNG BÁO GIÁ THIẾT KẾ WEBSITE TRỌN GÓI
 
   $("body").on("click", ".list-package li", function (event) {
     event.preventDefault();
@@ -74,16 +81,19 @@ $(document).ready(function () {
   }, 1000);
   ("use strict");
 
+  // LOADER
   $(".loader").delay(700).fadeOut("slow");
   $("#untree_co--overlayer").delay(700).fadeOut("slow");
 
+  // ACTIVE ĐƯỜNG DẪN
   var path = window.location.href;
-
   $("#sidebar-menu .sub-menu li a").each(function () {
     if (this.href === path) {
       $(this).addClass("text-primary");
     }
   });
+
+  // COPPY
 
   $(".copy").tooltip({ animation: true, trigger: "manual", title: "đã copy" });
   $(".copy")
@@ -106,6 +116,4 @@ $(document).ready(function () {
     .mouseout(function () {
       $(this).tooltip("hide");
     });
-
-  $(".split").str.split(" ", 3);
 });

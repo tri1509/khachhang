@@ -158,8 +158,10 @@
                 return $alert;
             }
         }
+
+        // ALTER TABLE `nguon` ADD `update_day` TIMESTAMP NOT NULL AFTER `time`;
         public function show($code){
-            $query = "SELECT * FROM nguon WHERE code = '$code' ORDER BY id DESC";
+            $query = "SELECT * FROM nguon WHERE code = '$code' ORDER BY update_day DESC, id DESC";
             $result = $this->db->select($query);
             return $result;
         }

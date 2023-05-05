@@ -49,6 +49,7 @@
                       <option value=" ">----Chọn----</option>
                       <option>Rồi</option>
                       <option>Chưa</option>
+                      <option>Business</option>
                     </select>
                     <label for="question">WEB</label>
                   </div>
@@ -70,7 +71,7 @@
               </div>
             </div>
             <div class="col-12">
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <label for="note">Ghi chú</label>
                 <textarea name="note" class="ckeditor"></textarea>
               </div>
