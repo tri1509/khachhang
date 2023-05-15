@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="./ckeditor/ckeditor.js" type="text/javascript"></script>
+  <script src="https://cdn.ckeditor.com/4.21.0/full-all/ckeditor.js"></script>
   <title><?php echo $title ?></title>
 </head>
 
